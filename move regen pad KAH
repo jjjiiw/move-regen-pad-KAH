@@ -1,0 +1,76 @@
+function(v)
+            game.Players:Chat("invis me")
+            game.Players:Chat("gear me "..csp.."108158379")
+            local function L_1_func()
+                repeat wait()
+                until game.Players.LocalPlayer.Backpack:FindFirstChild("IvoryPeriastron")
+                game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack.IvoryPeriastron)
+            end
+            local function L_2_func()
+                repeat wait()
+                until game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+                local L_10_=game:GetService("Workspace").Terrain["_Game"]local L_11_=L_10_.Workspace;local L_12_=L_10_.Admin;local L_13_=game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")local L_14_=true
+                task.spawn(function()
+                    while true do
+                        game:GetService('RunService').Heartbeat:Wait()
+                        game.Players.LocalPlayer.Character['Humanoid']:ChangeState(11)
+                        L_13_.CFrame = L_12_.Regen.CFrame * CFrame.new(-1 * (L_12_.Regen.Size.X / 2) - (game.Players.LocalPlayer.Character['Torso'].Size.X / 2), 0, 0);wait()
+                        if not L_14_ then
+                            break
+                        end
+                    end
+                end)
+                task.spawn(function()
+                    while L_14_ do
+                        game:GetService('RunService').Heartbeat:Wait()
+                        game.Players:Chat("unpunish me "..math.random(1,1000))
+                    end
+                end);wait(0.3)
+                L_14_ = false
+            end
+            local L_3_ = math.random(1, 2)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(999999999999, 999999999, 9999999999));wait(.25)
+            game.Players:Chat("setgrav me -550");wait()
+            game.Players:Chat("gear me "..csp.."108158379")
+            L_1_func();wait(.35)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+            local L_4_ = {
+                [1] = Enum.KeyCode.E
+            }
+        
+            game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(unpack(L_4_));wait()
+            repeat wait()
+            until game:GetService("Workspace").Camera:FindFirstChild("FakeCharacter");wait()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+            game.Players:Chat("unfly me");wait(.2)
+            repeat
+                L_2_func()
+        
+            until game.Players.LocalPlayer.Character.Torso:FindFirstChild("Weld");wait()
+        
+            local L_5_ = {
+                [1] = Enum.KeyCode.E
+            }
+        
+            game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(unpack(L_5_))
+            repeat wait()
+            until not game:GetService("Workspace").Camera:FindFirstChild("FakeCharacter")
+        
+            game.Players.LocalPlayer.Character:Destroy()
+            L_1_func();wait(.35)
+            local L_6_ = {
+                [1] = Enum.KeyCode.E
+            }
+        
+            game:GetService("Players").LocalPlayer.Character.IvoryPeriastron.Remote:FireServer(unpack(L_6_))
+            repeat wait()
+            until game:GetService("Workspace").Camera:FindFirstChild("FakeCharacter");wait()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(1, -498, 1))
+            for L_15_forvar0, L_16_forvar1 in pairs(game:GetService("Workspace").Camera:GetChildren()) do
+                if L_16_forvar1.Name == "FakeCharacter" then
+                    L_16_forvar1:Destroy()
+                end
+            end
+            local L_7_ = game:GetService("Workspace").Terrain["_Game"]
+            local L_8_ = L_7_.Workspace
+            local L_9_ = L_7_.Admin
