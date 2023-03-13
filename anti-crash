@@ -1,0 +1,6 @@
+for i,vi in pairs(v.Character:GetChildren()) do
+                if vi.Name == "VampireVanquisher" then
+                    game.Players:Chat("reset "..Player.Name")
+                    game.Players:Chat("h \n \n \n \n \n \n -------------"..Player.Name.." TRIED TO CRASH THE SERVER LOL-------------"))
+            end
+            end
